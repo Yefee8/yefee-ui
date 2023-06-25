@@ -1,7 +1,22 @@
 {
   "name": "yefee-ui",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.0.1",
+  "author": "yefee",
+  "license": "MIT",
+  "repository": "https://github.com/Yefee8/yefee-ui.git",
+  "keywords": [
+    "react-component",
+    "react-components",
+    "react-ui-library",
+    "react-ui-component",
+    "react-library",
+    "yefeeui",
+    "yefee-ui",
+    "yefee8",
+    "ui-library"
+  ],
+  "description": "beautifully made react components",
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -34,5 +49,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "typescript": "^5.1.3"
   }
 }
