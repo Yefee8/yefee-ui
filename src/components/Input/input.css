@@ -1,0 +1,18 @@
+@import url('../root.css');
+
+.yefee-input{
+    padding-block: 8px;
+    padding-inline: 16px;
+    font-size: 16px;
+    color: var(--dark);
+    border: 2px solid var(--dark);
+    border-radius: 12px;
+    transition: 300ms;
+    width: auto;
+    outline: none;
+}
+
+.yefee-input:focus{
+    border: 2px solid var(--primary);
+    box-shadow: 0 0 0 1.5px var(--primary);
+}
