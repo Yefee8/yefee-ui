@@ -97,37 +97,37 @@
 /* Focuses */
 .primary-button:focus{
     background-color: var(--primary-darker);
-    box-shadow: 0 0 0 1.5px var(--primary-darker);
+    box-shadow: 0 0 0 1px var(--primary-darker);
     color: var(--white);
 }
 
 .success-button:focus{
     background-color: var(--success-darker);
-    box-shadow: 0 0 0 1.5px var(--success-darker);
+    box-shadow: 0 0 0 1px var(--success-darker);
     color: var(--white);
 }
 
 .danger-button:focus{
     background-color: var(--danger-darker);
-    box-shadow: 0 0 0 1.5px var(--danger-darker);
+    box-shadow: 0 0 0 1px var(--danger-darker);
     color: var(--white);
 }
 
 .secondary-button:focus{
     background-color: var(--dark-darker);
-    box-shadow: 0 0 0 1.5px var(--dark-darker);
+    box-shadow: 0 0 0 1px var(--dark-darker);
     color: var(--white);
 }
 
 .success-button:focus{
     background-color: var(--success-darker);
-    box-shadow: 0 0 0 1.5px var(--success-darker);
+    box-shadow: 0 0 0 1px var(--success-darker);
     color: var(--white);
 }
 
 .white-button:focus{
     background-color: var(--white-darker);
-    box-shadow: 0 0 0 1.5px var(--white-darker);
+    box-shadow: 0 0 0 1px var(--white-darker);
     color: var(--dark);
 }
 

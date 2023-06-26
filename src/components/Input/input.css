@@ -14,5 +14,5 @@
 
 .yefee-input:focus{
     border: 2px solid var(--primary);
-    box-shadow: 0 0 0 1.5px var(--primary);
+    box-shadow: 0 0 0 1px var(--primary);
 }
