@@ -163,7 +163,7 @@
 
 /* Types */
 .rounded-button{
-    border-radius: 64px !important;
+    border-radius: 9999999999999px !important;
 }
 
 .outlined-button{

@@ -11,6 +11,11 @@
     --danger-darker: #e20000;
     --dark-darker: #252525;
     --white-darker:#d6d6d6;
+    --primary-opaque:#0077ff30;
+    --success-opaque: #00DFA230;
+    --danger-opaque: #ff000030;
+    --dark-opaque: #2d435630;
+    --white-opaque:#f1f1f130;
 }
 
 *{

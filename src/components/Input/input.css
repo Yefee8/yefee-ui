@@ -1,5 +1,7 @@
 @import url('../root.css');
 
+/* Base */
+
 .yefee-input{
     padding-block: 8px;
     padding-inline: 16px;
@@ -11,6 +13,8 @@
     width: auto;
     outline: none;
 }
+
+/* Focus */
 
 .yefee-input:focus{
     border: 2px solid var(--primary);

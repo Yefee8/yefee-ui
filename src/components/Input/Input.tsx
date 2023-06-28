@@ -5,7 +5,7 @@ interface props {
     [key: string]: any;
 }
 
-export default function Button(props: props) {
+export default function Input(props: props) {
 
     function isItUsable() {
         let { type, ...restProps } = props;

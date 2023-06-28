@@ -1,0 +1,42 @@
+
+@import url('../root.css');
+
+/* Base */
+.yefee-alert{
+    padding-inline: 12px;
+    border-radius: 12px;
+    display: inline-block;
+    min-width: 200px;
+}
+
+/* Colors */
+
+.primary-alert{
+    color: var(--primary);
+    background-color: var(--primary-opaque);
+    border: 1px solid var(--primary);    
+}
+
+.success-alert{
+    color: var(--success);
+    background-color: var(--success-opaque);
+    border: 1px solid var(--success);    
+}
+
+.danger-alert{
+    color: var(--danger);
+    background-color: var(--danger-opaque);
+    border: 1px solid var(--danger);    
+}
+
+.secondary-alert{
+    color: var(--dark);
+    background-color: var(----dark-opaque);
+    border: 1.2px solid var(--dark);    
+}
+
+.white-alert{
+    color: var(--dark);
+    background-color: var(--white-opaque);
+    border: 1px solid var(--white);    
+}
