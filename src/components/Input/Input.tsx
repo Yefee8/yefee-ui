@@ -1,7 +1,6 @@
 import './input.css';
 
 interface props {
-    children: any;
     [key: string]: any;
 }
 

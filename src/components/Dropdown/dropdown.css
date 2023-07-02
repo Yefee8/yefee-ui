@@ -1,0 +1,45 @@
+@import url('../root.css');
+
+/* Base */
+
+.yefee-dropdown {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-block: 8px;
+    padding-inline: 16px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    transition: 300ms;
+    background-color: transparent;
+}
+
+.yefee-dropdown-items {
+    position: absolute;
+    top: 100%;
+    transform: translateY(16px);
+    width: 120%;
+    padding-block: 8px;
+    padding-inline: 16px;
+    border-radius: 8px;
+    background-color: var(--dark);
+}
+
+.yefee-dropdown-item {
+    width: 100%;
+}
+
+/* Types */
+
+.white-dropdown {
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.dark-dropdown {
+    border: 1px solid var(--dark);
+    color: var(--dark);
+}
