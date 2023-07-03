@@ -10,12 +10,8 @@ import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
-root.render( 
+root.render(
   <React.StrictMode>
-    <DropdownBase>
-      <Button color='secondary'>Open Dropdown</Button>
-      <Dropdown show={true}></Dropdown>
-    </DropdownBase>
   </React.StrictMode>
 );
 
