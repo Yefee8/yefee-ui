@@ -2,13 +2,15 @@ import { useEffect, useState } from 'react';
 import './dropdown.css';
 
 interface props {
-    type: "dark" | "white";
+    color?: "dark" | "white";
     show: boolean;
     items: {
         name: string,
         change: string
     }[];
-    setter: (change)=>{};
+    setter: (change) => void;
+    close: () => void;
+    id?: string;
     [key: string]: any;
 }
 
@@ -17,7 +19,7 @@ export default function Dropdown(props: props) {
     const [firstTime, setFirstTime] = useState(0);
 
     function isItUsable() {
-        let { type, show, items, ...restProps } = props;
+        let { color, show, items, ...restProps } = props;
         return restProps;
     }
 
@@ -39,12 +41,18 @@ export default function Dropdown(props: props) {
         }
     }, [props.show])
 
+    const items = props.items;
+
+    console.log(items);
 
     return (
-        <div className={`yefee-dropdown-items ${props.type ? props.type : 'dark'}-dropdown ${showClass === 'yefee-dropdown-invisible' && firstTime === 1 ? 'yefee-dropdown-first' : showClass}`} {...isItUsable()}>
+        <div className={`yefee-dropdown-items ${props.color ? props.color : 'dark'}-dropdown ${showClass === 'yefee-dropdown-invisible' && firstTime === 1 ? 'yefee-dropdown-first' : showClass}`} {...isItUsable()}>
             {props.items.map((item) => {
                 return (
-                    <div onClick={()=>props.setter(item.change)} className="yefee-dropdown-item">
+                    <div onClick={() => {
+                        props.setter(item.change)
+                        return props.close();
+                    }} className="yefee-dropdown-item">
                         {item.name}
                     </div>
                 )

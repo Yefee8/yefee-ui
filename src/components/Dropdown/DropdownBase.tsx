@@ -2,7 +2,7 @@ import './dropdown.css';
 
 interface props {
     children: any;
-    className: string;
+    className?: string;
     [key: string]: any;
 }
 

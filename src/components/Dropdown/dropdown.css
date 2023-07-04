@@ -15,7 +15,6 @@
     padding-block: 8px;
     padding-inline: 16px;
     border-radius: 8px;
-    background-color: var(--dark);
     gap: 6px;
     text-align: center;
 }
@@ -35,12 +34,14 @@
 
 .white-dropdown {
     border: 1px solid var(--white);
-    color: var(--white);
+    color: var(--dark);
+    background-color: var(--white);
 }
 
 .dark-dropdown {
     border: 1px solid var(--dark);
     color: var(--white);
+    background-color: var(--dark);
 }
 
 /* Animation Classes */
@@ -49,12 +50,14 @@
     animation: 400ms visible;
     opacity: 1;
     transform: translate(-50%, 6px);
+    pointer-events: all;
 }
 
 .yefee-dropdown-invisible {
     animation: 400ms invisible;
     opacity: 0;
     transform: translate(-50%, -6px);
+    pointer-events: none;
 }
 
 .yefee-dropdown-first {
@@ -82,6 +85,6 @@
 
     to {
         opacity: 0;
-        transform: translate(-50%, -6px);
+        transform: translate(-50%, 0px);
     }
 }
