@@ -56,19 +56,19 @@
 .yefee-dropdown-invisible {
     animation: 400ms invisible;
     opacity: 0;
-    transform: translate(-50%, -6px);
+    transform: translate(-50%, 0px);
     pointer-events: none;
 }
 
 .yefee-dropdown-first {
     opacity: 0;
-    transform: translate(-50%, -6px);
+    transform: translate(-50%, 0px);
 }
 
 @keyframes visible {
     from {
         opacity: 0;
-        transform: translate(-50%, -6px);
+        transform: translate(-50%, 0px);
     }
 
     to {

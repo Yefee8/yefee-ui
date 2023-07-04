@@ -41,10 +41,6 @@ export default function Dropdown(props: props) {
         }
     }, [props.show])
 
-    const items = props.items;
-
-    console.log(items);
-
     return (
         <div className={`yefee-dropdown-items ${props.color ? props.color : 'dark'}-dropdown ${showClass === 'yefee-dropdown-invisible' && firstTime === 1 ? 'yefee-dropdown-first' : showClass}`} {...isItUsable()}>
             {props.items.map((item) => {
