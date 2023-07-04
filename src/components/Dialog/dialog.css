@@ -1,0 +1,69 @@
+@import url('../root.css');
+
+/* Base */
+
+.yefee-dialog-base{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Colors */
+
+.white-dialog{
+    background-color: var(--white-opaque);
+}
+
+.dark-dialog{
+    background-color: var(--dark-opaque);
+}
+
+/* Animation */
+
+.dialog-visible{
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 300ms visible;
+
+}
+
+.dialog-invisible{
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: 300ms invisible;
+}
+
+.dialog-none{
+    display: none;
+    opacity: 0;
+}
+
+@keyframes visible{
+    0%{
+        display: none;
+        opacity: 0;
+    }
+
+    1%{
+        display: flex;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes invisible{
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
