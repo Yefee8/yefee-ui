@@ -1,0 +1,90 @@
+@import url('../root.css');
+
+.yefee-dropdown-base {
+    display: inline-block;
+    position: relative;
+}
+
+.yefee-dropdown-items {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 6px);
+    padding-block: 8px;
+    padding-inline: 16px;
+    border-radius: 8px;
+    gap: 6px;
+    text-align: center;
+}
+
+.yefee-dropdown-item {
+    transition: 300ms;
+    cursor: pointer;
+    padding-inline: 12px;
+    border-radius: 4px;
+}
+
+.yefee-dropdown-item:hover {
+    background-color: var(--primary-opaque);
+}
+
+/* Types */
+
+.white-dropdown {
+    border: 1px solid var(--white);
+    color: var(--dark);
+    background-color: var(--white);
+}
+
+.dark-dropdown {
+    border: 1px solid var(--dark);
+    color: var(--white);
+    background-color: var(--dark);
+}
+
+/* Animation Classes */
+
+.yefee-dropdown-visible {
+    animation: 400ms visible;
+    opacity: 1;
+    transform: translate(-50%, 6px);
+    pointer-events: all;
+}
+
+.yefee-dropdown-invisible {
+    animation: 400ms invisible;
+    opacity: 0;
+    transform: translate(-50%, 0px);
+    pointer-events: none;
+}
+
+.yefee-dropdown-first {
+    opacity: 0;
+    transform: translate(-50%, 0px);
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+        transform: translate(-50%, 0px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, 6px);
+    }
+}
+
+@keyframes invisible {
+    from {
+        opacity: 1;
+        transform: translate(-50%, 6px);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(-50%, 0px);
+    }
+}
