@@ -1,3 +1,4 @@
+import React from 'react';
 import './button.css';
 
 interface props {
@@ -7,7 +8,7 @@ interface props {
     [key: string]: any;
 }
 
-export default function Button(props: props) {
+export default function Button(props: props){
 
     function isItUsable() {
         let { children, type, color, ...restProps } = props;
