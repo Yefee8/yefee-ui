@@ -1,18 +1,17 @@
-import React from 'react';
-import './input.css';
+import React from 'react'
+import './input.css'
 
 interface props {
-    [key: string]: any;
+  [key: string]: any
 }
 
-export default function Input(props: props) {
+export default function Input (props: props) {
+  function isItUsable () {
+    const { type, ...restProps } = props
+    return restProps
+  }
 
-    function isItUsable() {
-        let { type, ...restProps } = props;
-        return restProps;
-    }
-
-    return (
-        <input className="yefee-input" type={props.type ? props.type : "text"} {...isItUsable()} />
-    );
+  return (
+    <input className='yefee-input' type={props.type ? props.type : 'text'} {...isItUsable()} />
+  )
 }
