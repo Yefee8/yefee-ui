@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      /* Derleme Ayarları */
+      "target": "es6",                    
+      "module": "commonjs",               
+      "outDir": "./dist",                 
+      "strict": false,                     
+      "esModuleInterop": true,
+      /* Proje Ayarları */
+      "baseUrl": ".",                   
+      "paths": {
+        "@src/*": ["src/*"]
+      },
+      "include": [
+        "src/**/*.ts"
+      ],
+      "exclude": [
+        "node_modules"
+      ]
+    }
+  }
