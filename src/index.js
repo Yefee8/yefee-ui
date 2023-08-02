@@ -1,9 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import Button from "./lib/Button/Button";
 
 const App = () => {
     return (
-        <div>yefee-ui 💖</div>
+        <div>
+            <Button>
+                Yo!
+            </Button>
+        </div>
     )
 };
 

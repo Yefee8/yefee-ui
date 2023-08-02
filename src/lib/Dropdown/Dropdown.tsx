@@ -8,7 +8,7 @@ interface props {
         name: string,
         change: string
     }[];
-    setter: (change) => void;
+    setter: (change: any) => void;
     close: () => void;
     id?: string;
     [key: string]: any;
