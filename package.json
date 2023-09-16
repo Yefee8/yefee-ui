@@ -1,6 +1,6 @@
 {
   "name": "yefee-ui",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "author": "yefee",
   "license": "ISC",
   "repository": {
@@ -10,12 +10,9 @@
   "main": "dist/index.js",
   "module": "dist/index.js",
   "files": [
-    "dist",
     "src",
     "README.md",
-    ".babelrc",
     "tsconfig.json",
-    "webpack.config.js",
     "yarn.lock"
   ],
   "keywords": [
