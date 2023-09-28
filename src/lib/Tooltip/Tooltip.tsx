@@ -10,12 +10,12 @@ interface props {
   [key: string]: any
 }
 
-export default function Tooltip (props: props) {
+export default function Tooltip(props: props) {
   const [showClass, setShowClass] = useState(props.show ? 'yefee-dropdown-visible' : 'yefee-dropdown-invisible')
   const [firstTime, setFirstTime] = useState(0)
 
-  function isItUsable () {
-    const { color, show, ...restProps } = props
+  function isItUsable() {
+    const { color, show, className, ...restProps } = props
     return restProps
   }
 
@@ -36,7 +36,7 @@ export default function Tooltip (props: props) {
   }, [props.show])
 
   return (
-    <div className={`yefee-tooltip tooltip-${props.position ? props.position : 'bottom'} ${props.color ? props.color : 'dark'}-tooltip ${showClass === 'yefee-dropdown-invisible' && firstTime === 1 ? 'yefee-tooltip-first' : showClass}`} {...isItUsable()}>
+    <div className={`${props.className} yefee-tooltip tooltip-${props.position ? props.position : 'bottom'} ${props.color ? props.color : 'dark'}-tooltip ${showClass === 'yefee-dropdown-invisible' && firstTime === 1 ? 'yefee-tooltip-first' : showClass}`} {...isItUsable()}>
       {props.children}
     </div>
   )

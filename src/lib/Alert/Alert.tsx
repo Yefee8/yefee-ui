@@ -10,9 +10,9 @@ interface props {
   [key: string]: any
 }
 
-export default function Alert (props: props) {
-  function isItUsable () {
-    const { children, color, width, height, style, ...restProps } = props
+export default function Alert(props: props) {
+  function isItUsable() {
+    const { children, color, width, height, style, className, ...restProps } = props
     return restProps
   }
 
@@ -23,7 +23,7 @@ export default function Alert (props: props) {
         height: props.height ? props.height : '',
         ...props.style
       }}
-      className={`yefee-alert ${props.color ? props.color : 'primary'}-alert`} {...isItUsable()}
+      className={`${props.className} yefee-alert ${props.color ? props.color : 'primary'}-alert`} {...isItUsable()}
     >
       {props.children}
     </div>

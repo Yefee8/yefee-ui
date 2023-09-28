@@ -10,16 +10,16 @@ interface props {
   }>
   setter: (change: any) => void
   close: () => void
-  id?: string
+  id?: string;
   [key: string]: any
 }
 
-export default function Dropdown (props: props) {
+export default function Dropdown(props: props) {
   const [showClass, setShowClass] = useState(props.show ? 'yefee-dropdown-visible' : 'yefee-dropdown-invisible')
   const [firstTime, setFirstTime] = useState(0)
 
-  function isItUsable () {
-    const { color, show, items, ...restProps } = props
+  function isItUsable() {
+    const { color, show, items, className, ...restProps } = props
     return restProps
   }
 
@@ -40,7 +40,7 @@ export default function Dropdown (props: props) {
   }, [props.show])
 
   return (
-    <div className={`yefee-dropdown-items ${props.color ? props.color : 'dark'}-dropdown ${showClass === 'yefee-dropdown-invisible' && firstTime === 1 ? 'yefee-dropdown-first' : showClass}`} {...isItUsable()}>
+    <div className={`yefee-dropdown-items ${props.className} ${props.color ? props.color : 'dark'}-dropdown ${showClass === 'yefee-dropdown-invisible' && firstTime === 1 ? 'yefee-dropdown-first' : showClass}`} {...isItUsable()}>
       {props.items.map((item) => {
         return (
           <div

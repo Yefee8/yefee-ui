@@ -7,11 +7,11 @@ interface props {
 
 export default function Input (props: props) {
   function isItUsable () {
-    const { type, ...restProps } = props
+    const { type, className, ...restProps } = props
     return restProps
   }
 
   return (
-    <input className='yefee-input' type={props.type ? props.type : 'text'} {...isItUsable()} />
+    <input className={`${props.className} yefee-input`} type={props.type ? props.type : 'text'} {...isItUsable()} />
   )
 }
