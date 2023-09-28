@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={poppins.className}>
         <Header />
-        <div className="flex flex-col md:mx-32 gap-16 mx-auto justify-center items-center container">
+        <div className="flex flex-col gap-16 mx-auto !justify-center !items-center container">
           {children}
         </div>
       </body>
