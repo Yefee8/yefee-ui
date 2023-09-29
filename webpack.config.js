@@ -22,12 +22,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(ts|tsx)$/,
-        exclude: /node_modules/,
+        test: /\.(ts|tsx|js|jsx)$/,
+        // exclude: /node_modules/,
         use: {
           loader: 'ts-loader',
           options: {
             presets: ['@babel/preset-env'],
+            onlyCompileBundledFiles: true
           },
         },
       },
