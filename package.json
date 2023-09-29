@@ -13,7 +13,8 @@
     "src",
     "README.md",
     "tsconfig.json",
-    "yarn.lock"
+    "yarn.lock",
+    "webpack.config.js"
   ],
   "keywords": [
     "react-component",
