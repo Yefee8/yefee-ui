@@ -9,32 +9,32 @@ module.exports = {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
   },
+  resolve: {
+    extensions: ['.ts', '.tsx', 'js', 'jsx'],
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [
+      new TerserPlugin(),
+      new CssMinimizerPlugin(),
+    ],
+  },
   module: {
     rules: [
       {
         test: /\.(ts|tsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: 'babel-loader',
+          loader: 'ts-loader',
           options: {
-            presets: ['@babel/preset-env', '@babel/preset-typescript'],
+            presets: ['@babel/preset-env'],
           },
         },
       },
       {
-        test: /\.css$/, // CSS dosyalarını tanımlayın
+        test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
-    ],
-  },
-  resolve: {
-    extensions: ['.ts', '.tsx'],
-  },
-  optimization: {
-    minimize: true,
-    minimizer: [
-      new TerserPlugin(),
-      new CssMinimizerPlugin(), // CSS dosyalarını minify etmek için eklendi
     ],
   },
   plugins: [
